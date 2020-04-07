@@ -115,6 +115,7 @@ return [
 
     'hosts' => [
         env('DEPLOY_HOST', '127.0.0.1') => [
+            'stage' => 'production',
             'deploy_path' => env('DEPLOY_PATH', '/var/www/donate'),
             'port' => env('DEPLOY_PORT', '22'),
             'branch	' => 'develop',
